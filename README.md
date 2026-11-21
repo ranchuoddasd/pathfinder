@@ -1,8 +1,10 @@
 # Network Path Analyzer
 
+Personal, company-neutral network engineering prototype. This repository contains no employer-specific material.
+
 A prototype FastAPI service for ingesting Cisco- and Juniper-style device configurations, building a network topology, analyzing packet paths, and exploring configuration-change impact.
 
-> **Project status:** Prototype / work in progress. The repository currently contains the API entry-point file, while the imported model, parser, and engine modules are not present in the visible repository tree. The application is therefore not yet runnable from a fresh clone.
+> **Project status:** Prototype / work in progress. The repository currently contains `main.py`, while the imported model, parser, and engine modules are not present in the visible repository tree. The application is therefore not yet runnable from a fresh clone.
 
 ## Goals
 
@@ -32,7 +34,7 @@ A prototype FastAPI service for ingesting Cisco- and Juniper-style device config
 
 ## Architecture
 
-The API entry point is designed to coordinate these components:
+The API entry point is `main.py` and is designed to coordinate these components:
 
 - **Parsers:** Cisco and Juniper configuration parsing
 - **Topology builder:** Build and validate the device/link topology
